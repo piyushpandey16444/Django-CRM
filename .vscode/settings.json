@@ -1,0 +1,12 @@
+{
+    "python.pythonPath": "C:\\Users\\Pandey\\.virtualenvs\\CRM-9wtM1Xc8\\Scripts\\python.exe",
+    "python.autoComplete.extraPaths": ["C:\\Users\\Pandey\\.virtualenvs\\CRM-9wtM1Xc8\\Scripts\\python.exe"],
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "autopep8",
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugin=pylint_django"
+    ]    
+}
