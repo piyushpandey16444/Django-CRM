@@ -1,4 +1,15 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+
+class User(AbstractUser):
+    pass
+
+
+class Agent(models.Model):
+    # user = models.OneToOneField(User, on_delete=models.CASCADE)
+    first_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255)
 
 
 class Lead(models.Model):
@@ -18,3 +29,4 @@ class Lead(models.Model):
 
     profile_picture = models.ImageField(blank=True, null=True)
     special_files = models.FileField(blank=True, null=True)
+    agent = models.ForeignKey(Agent, on_delete=models.CASCADE)
