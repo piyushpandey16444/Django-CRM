@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Lead Detail</title>
 </head>
 <body>
-    <h1>Custom HTML Page</h1>
-    <p>{{ name }}</p>
-    <p>{{ age }}</p>
-    <ul>
-        {% for lead in leads %}
-          <li>{{ lead }}</li>
-        {% endfor %}
-    </ul>
+    <a href="/leads">Go Back</a>
+    <hr>
+    <h1>This is details of {{ lead.first_name }}</h1>
+    <h3>{{ lead.first_name }} {{ lead.last_name }}</h3>
+    <h3>Age: {{ lead.age }}</h3>
 </body>
 </html>
